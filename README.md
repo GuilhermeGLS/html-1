@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site formularios</title>
 </head>
 <!-- Conteudo Apresentado ao visitante -->
 <body>
@@ -120,10 +120,49 @@
 <!-- usando tag input para enviar -->
 <input type="submit">
 
-
-
 </form>
 
+<!-- form -->
+<form>
+   
+   
+    <p>Pedido de Pizza</p>
+    <br>
+    <label for="localidade"> Localidade </label>
+    <input type="text" id="localidade" name="localidade" required placeholder="adicionar rua, bairro, número">
+<br>
+    <!-- type="radio": é para selecionar apenas uma opção -->
+    <!-- o atributo "name" dele repete para que possa escolher somente 1 -->
+    <p>borda</p>
+    <input type="radio" id="chedder" name="borda" value="chedder"/>
+    <label for="chedder">chedder</label>
+<br>
+    <input type="radio" id="catupiry" name="borda" value="catupiry"/>
+    <label for="catupiry">catupiry</label>
+<br>
+    <input type="radio" id="chocolate" name="borda" value="chocolate"/>
+    <label for="chocolate">chocolate</label>
+<br>    
+    <!-- select -->
+    <P>adicionais</P>
+    <label for="mais">adicionais</label>
+    <select name="adicionais" id="adicionais">
+        <option value="queijo">Queijo</option>
+        <option value="tomate"> Tomate </option>
+    </select>
+    <br>
+    <!-- pizza -->
+    <p>Pizzas</p>
+    <input type="checkbox" name="pizza" value="marquerita">
+    <label for="marquerita">marquerita</label>
+<br>
+    <input type="checkbox" name="pizza" value="4Queijos">
+    <label for="4Queijos">4Queijos</label>
+<br>
+<button type="submit">enviar pedido</button>
 
+    
+    
+</form>
 </body>
 </html>
